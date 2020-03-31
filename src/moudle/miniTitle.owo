@@ -1,0 +1,15 @@
+<template lang="pug">
+.mini-title {{prop._text}}
+</template>
+
+
+<style lang="less">
+.mini-title {
+  background-image: url('@|mini-title-bg.png|');
+  background-repeat: no-repeat;
+  line-height: 60px;
+  font-size: 25px;
+  background-position: left center;
+  padding-left: 30px;
+}
+</style>

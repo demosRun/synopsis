@@ -1,0 +1,81 @@
+<template>
+  <div class="nav clearfix">
+    <a href="#zhanpinkun">新万金简介</a>
+    <a href="#tbch">新万金概况</a>
+    <a href="#spjj">邻近性及优秀FTA环境</a>
+    <a href="#wdtpgs">项目现况及推进计划</a>
+    <a href="#fprj">招商引资优惠政策</a>
+  </div>
+</template>
+
+<script>
+// 距离顶部位置
+var navMarginTop = 0
+if (navMarginTop && navMarginTop != 0) {
+  function getScrollTop() {
+    var scrollTop = 0, bodyScrollTop = 0, documentScrollTop = 0;
+    if(document.body){
+      bodyScrollTop = document.body.scrollTop;
+    }
+    if(document.documentElement){
+      documentScrollTop = document.documentElement.scrollTop;
+    }
+    scrollTop = (bodyScrollTop - documentScrollTop > 0) ? bodyScrollTop : documentScrollTop;
+    return scrollTop;
+  }
+
+  var drop = true
+  window.onscroll = function(){
+    var scrollTopValue = getScrollTop()
+    if (scrollTopValue > 50 && drop) {
+      document.querySelector('.nav.clearfix').classList.add('drop')
+      drop = false
+    }
+    if (scrollTopValue <= 50 && !drop) {
+      document.querySelector('.nav.clearfix').classList.remove('drop')
+      drop = true
+    }
+  }
+}
+
+</script>
+
+
+<style lang="less">
+a:link,a:visited {
+  color: #484848;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c00;
+  text-decoration: underline;
+}
+.nav, .nav a:link, .nav a:visited, .nav a:hover {
+  color: #fff;
+}
+
+.nav {
+  text-align: center;
+  font-size: 20px;
+  background: #003c9f;
+  position: absolute;
+  top: 600px;
+  z-index: 99;
+  height: 50px;
+  line-height: 50px;
+  transition: top 0.2s;
+  width: 1000px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.nav a {
+  padding: 0 10px;
+  padding-left: 23px;
+  margin: 0 5px;
+  border-left: 2px solid white;
+}
+
+</style>

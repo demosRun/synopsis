@@ -1,0 +1,32 @@
+<template lang="pug">
+ul.news-list
+  li 李克强主持会议:突出做好无症状感染者防控
+  li 260多万各级人大代表投入疫情防控和复工复产
+  li 中央定调积极财政政策 专家:有望释放万亿资金
+  li 2020年全国高考延期到7月7日至8日举行
+  li 3月采购经理指数回升 企业复工复产明显加快
+  li 李克强主持会议:突出做好无症状感染者防控
+  li 260多万各级人大代表投入疫情防控和复工复产
+  li 中央定调积极财政政策 专家:有望释放万亿资金
+  li 2020年全国高考延期到7月7日至8日举行
+  li 3月采购经理指数回升 企业复工复产明显加快
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+
+    }
+  }
+</script>
+
+
+<style lang="less">
+.news-list {
+  overflow: hidden;
+  li {
+    line-height: 30px;
+    font-siez: 14px;
+  }
+}
+</style>

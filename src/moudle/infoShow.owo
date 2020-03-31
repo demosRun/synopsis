@@ -1,0 +1,60 @@
+<template lang="pug">
+.info-show.clear
+  .info
+    h3 简介
+    p &emsp;&emsp;新万金开发项目是韩国国家级重点建设项目，通过建设连接群山和扶安的世界最长防潮堤（33.9 km2），并由此开发出土地291 km2和淡水湖118 km2，将其打造为集经济、产业和旅游为一身的东北亚经济中心、符合生态环境标准的“全球化精品新万金”。
+  img(src="@|img-show.jpg|")
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+
+    }
+  }
+</script>
+
+
+<style lang="less">
+.info-show {
+  position: relative;
+  overflow: hidden;
+}
+.info-show:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+img {
+  float: right;
+}
+.info {
+  color: #6d6b6c;
+  background-image: url('@|info-bg.png|');
+  width: 291px;
+  height: 220px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 90px 70px;
+}
+h3 {
+  position: absolute;
+  left: 25px;
+  top: 42px;
+  line-height: 40px;
+  width: 90px;
+  text-align: center;
+  color: white;
+  font-size: 22px;
+}
+p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+</style>

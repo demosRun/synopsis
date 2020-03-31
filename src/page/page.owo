@@ -1,0 +1,192 @@
+<template lang="pug">
+.home
+  plug(_name="topBarInfo" _src="https://template.owo.ink/cfeb507e71e605b2.owo")
+  //- 导航条
+  plug(_name="navbar" _src="https://template.owo.ink/454e37068fdc42b1.owo")
+  //- 占位
+  .empty
+  //- 带装饰的标题
+  .w1000
+    h2.title-bar 一个开启新文明的城市——新万金
+    .card.card-1.clear
+      .left.fl
+        plug(_name="imageVideoBox" _src="https://template.owo.ink/b0a33b1a2f704f09.owo")
+      .right.fl
+        h3 大标题大标题大标题大标题大标
+        plug(_name="newsList" _src="./src/moudle/newsList.owo")
+        .line
+        h3 大标题大标题大标题大标题大标
+        plug(_name="newsList" _src="./src/moudle/newsList.owo")
+    .title
+      h2 新万金简介
+      h3 Synopsis
+    .card.card-2
+      plug(_name="infoShow" _src="./src/moudle/infoShow.owo")
+    
+    .title
+      h2 新万金概况
+      h3 General situation
+    plug(_name="miniTitle" _text="土地利用计划" _src="./src/moudle/miniTitle.owo")
+    .card.card-3
+      //- 背景图
+      img.so-0(src="@|462.png|")
+      //-  文字
+      .text.text-1(style="top: 65px;left: 83px;")
+        h3 产业研究用地
+        h4 41.7km2  (14.3%)
+      .text.text-2(style="top: 65px;left: 760px;")
+        h3 卫星城市及其他设施
+        h4 24.4km2 (8.4%)
+      .text.text-3(style="top: 176px; left: 39px;")
+        h3 国际合作用地
+        h4 52.0km2 (17.9%)
+      .text.text-4(style="top: 176px; left: 803px;")
+        h3 农业与生命用地
+        h4 94.3km2 (32.4%)
+      .text.text-5(style="top: 288px;left: 83px;")
+        h3 环境生态用地
+        h4 42.0km2  (14.4%)
+      .text.text-6(style="top: 288px;left: 762px;")
+        h3 旅游休闲用地
+        h4 36.8km2  (12.6%)
+      //- 底部介绍信息
+      .bottom-text 总面积：409km2  (用地：291km2 ，湖沼：118km2 )
+  plug.w1000(_name="miniTitle" _text="发展历程" _src="./src/moudle/miniTitle.owo")
+  .card.card-4.time-line
+    .text.text-1991(style="top: 105px; left: 488px;") 防波堤开工
+    .text.text-2010(style="top: 256px; left: 685px;") 防波堤竣工
+    .text.text-2012(style="top: 75px; left: 883px;") 制定新万金特别法
+    .text.text-2013(style="top: 285px; left: 1052px;") 成立新万金开发厅
+    .text.text-2018(style="top: 105px; left: 1235px;") 成立新万金开发公社<br>新万金可再生能源展望宣布仪式
+  
+  .w1000
+    .title
+      h2 与中国·全球市场的邻近性及优秀的FTA环境
+      h3 Environmental Science
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+
+    }
+  }
+</script>
+
+
+<style lang="less">
+.main-image {
+  width: 100%;
+  height: auto;
+}
+.empty {
+  width: 100%;
+  user-select: none;
+  height: 750px;
+  pointer-events: none;
+}
+.title-bar {
+  background-image: url('@|decorate.png|');
+  background-repeat: no-repeat;
+  height: 80px;
+  line-height: 80px;
+  background-position: 10px center;
+  padding-left: 138px;
+  width: 600px;
+  color: #073a93;
+  font-weight: bold;
+  font-size: 34px;
+  display: block;
+  margin: 0 auto;
+  font-family: "Microsoft YaHei";
+  margin-bottom: 30px;
+}
+.card {
+  margin-bottom: 60px;
+  position: relative;
+}
+.card-1 {
+  .left {
+    width: 637px;
+    height: 400px;
+  }
+  .right {
+    width: 330px;
+    overflow: hidden;
+    margin-left: 33px;
+    h3 {
+      font-size: 22px;
+      line-height: 30px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+    .news-list {
+      height: 150px;
+    }
+  }
+  .line {
+    height: 1px;
+    margin: 7px 0;
+    background-color: #dddddd;
+  }
+}
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #353535;
+  background-image: url('@|title-bg.png|');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 10px;
+  h2 {
+    line-height: 50px;
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+.so {position: absolute;}
+.so-0 {left: 454px;top: 2178px;z-index: 0;}
+.card-3 {
+  position: relative;
+  .text {
+    position: absolute;
+    height: 56px;
+    width: 170px;
+    text-align: center;
+    line-height: 28px;
+    padding: 4px 0;
+  }
+  h3 {
+    color: #181616;
+  }
+  h4 {
+    color: #1faae0;
+    font-size: 17px;
+  }
+  .bottom-text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    color: #181616;
+  }
+}
+.time-line {
+  height: 315px;
+  width: 1917px;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('@|time-line.png|');
+  .text {
+    position: absolute;
+    text-align: left;
+    color: #333333;
+    width: 200px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+</style>
