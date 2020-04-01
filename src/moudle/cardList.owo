@@ -1,0 +1,43 @@
+<template lang="pug">
+ul.card-list.clear
+  li(:for="9")
+    a(href="#")
+      img(src="http://www.people.com.cn/NMediaFile/2020/0401/MAIN202004010939439835217830074.jpg")
+      p 填写文字
+</template>
+
+
+<style lang="less">
+:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.card-list {
+  width: 1000px;
+  height: auto;
+  li {
+    float: left;
+    margin-right: 29px;
+    margin-bottom: 15px;
+    img {
+      width: 314px;
+      height: 200px;
+    }
+    p {
+      font-size: 16px;
+      text-align: center;
+      line-height: 20px;
+      overflow: hidden;
+      height: 20px;
+      color: black;
+    }
+  }
+  li:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+</style>

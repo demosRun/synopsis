@@ -1,0 +1,103 @@
+<template>
+  <div class="high1">
+    <div class="button arrow-left" o-tap="prev"></div> 
+    <div class="button arrow-right" o-tap="next"></div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!- 插入图片 宽度: 1000px 高度: 460px ->
+        <div class="swiper-slide"><img src="http://www.people.com.cn/NMediaFile/2019/0621/MAIN201906210855032980489526259.jpg" width="1000" height="460" alt="" /><span>1.舞蹈演员们现场表演以“惠安女”为原型的群体舞蹈。（摄影：陈嘉姚）</span></div>
+        <div class="swiper-slide"><img src="http://www.people.com.cn/NMediaFile/2019/0621/MAIN201906211017498979737378275.jpg" width="1000" height="460" alt="" /><span>2.舞蹈演员们现场表演以“惠安女”为原型的群体舞蹈。（摄影：陈嘉姚）</span></div>
+        <div class="swiper-slide"><img src="http://www.people.com.cn/NMediaFile/2019/0621/MAIN201906210856213440704882887.jpg" width="1000" height="460" alt="" /><span>3.舞蹈演员们现场表演以“惠安女”为原型的群体舞蹈。（摄影：陈嘉姚）</span></div>
+      </div>
+    </div>
+    <div class="pagination"></div>
+  </div>
+</template>
+
+<script>
+module.exports = {
+  data: {
+    swiper: null
+  },
+  created: function () {
+    setTimeout(() => {
+      const dom = this.$el.getElementsByClassName('swiper-container')[0]
+      this.data.swiper = new Swiper(dom, {
+        pagination: '.high1 .pagination',
+        loop:true,
+        grabCursor: true,
+        paginationClickable: true
+      })
+    }, 0)
+  },
+  prev: function () {
+    this.data.swiper.swipePrev()
+  },
+  next: function () {
+    this.data.swiper.swipeNext()
+  }
+}
+</script>
+
+
+<style lang="less">
+.high1 {
+  width: 1000px;
+  height: 460px;
+  position: relative;
+  margin: 0px auto;
+}
+.button {
+  cursor: pointer;
+}
+.arrow-left {
+  background: url(http://www.people.com.cn/img/2016people/images/focus_left_b.png) no-repeat center;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 36px;
+  height: 36px;
+  z-index: 999;
+}
+
+.arrow-right {
+  background: url(http://www.people.com.cn/img/2016people/images/focus_right_b.png) no-repeat left bottom;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 36px;
+  height: 36px;
+  z-index: 999;
+}
+
+.swiper-container {
+  height: 460px;
+  width: 1000px;
+}
+
+.pagination {
+  display: none;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.swiper-slide span {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
+  font-size: 16px;
+  left: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+</style>

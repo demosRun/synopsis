@@ -63,6 +63,58 @@
     .title
       h2 与中国·全球市场的邻近性及优秀的FTA环境
       h3 Environmental Science
+  .card.card-5
+    plug.w1000(_name="miniTitle2" _text="政府主导的国策项目" _src="./src/moudle/miniTitle2.owo")
+    .text-box
+      .left.fl
+        h3 通过以国家机关新万金开发厅、新万金开发公社为中心推进开发，确保可靠性和稳定性。
+        h3 通过新万金特别法,可提供有针对性的行政支援。
+        h4 - 减免税，一站式审批服务
+        h4 - 确保投资者的创意性
+      .right.fl
+        h2 文在寅政府的支持
+        h2 反映国政课题: 为推进有速度感的新万金项目
+        p ① 为公共部门主导的填海造地，成立新万金开发公社<br>② 提前建成国际机场、新港湾等物流交通网<br>&emsp;- 公共填埋主导项目: 在国际合作用地内，建成智慧水边城市及2023年世界童军大露营用地的填埋<br>&emsp;- 提前建成物流交通网: 主要干线公路是在举办世界童军大露营前开通，以及适时推进扩充港口、机场、铁路 <br>&emsp;- 增加预算: 2016年808亿韩元、2017年1213亿韩元、2018年2233亿韩元、2019年2562亿韩元
+  .card.card-6
+    plug.w1000(_name="miniTitle" _text="韩   中经济合作领先项目 新万金韩  中FTA产业合作区" _src="./src/moudle/miniTitle.owo")
+    plug.w1000(_name="high1" _src="https://template.owo.ink/9888d9cbc1129fca.owo")
+    .box
+      .item-box.clear
+        .item
+          h2 概念
+          p 以韩• 中两国FTA为基础，在产业区的设立、运营和开发，以及增进企业投资等多方面， 通过两国间的合作来推进的产业合作区 。
+          h2 指定效果
+          p • 在有关区域内现存的规定及鼓励政策以外，给予入驻企业等更多的优惠政策<br>• 细部特例将通过韩中两国政府高层协议组织(副部长级)决定
+        .item
+          h2 推进现状及意义
+          p 通过韩中两国通商部长(中:商务部，韩:产业通商资源部)间合作协议决定韩中FTA产业园<br>* 韩方 : 新万金事业地区， 中方 : 山东烟台、江苏盐城、广东省
+          h2 意义
+          p • 2014年7月韩• 中两国首脑达成协议，将新万金FTA产业合作区作为韩∙中经济合作区项目的领先项目<br>• 促进两国相互投资，强化检疫·通关领域合作，促进产业合作活性化及FTA网络活用等成为韩∙中FTA效果最大化的重要途径
+        .item
+          h2 根据综合保税区指定（2014年6月）免除关税
+          p • 入驻企业通过加工进口原材料进行出口，则免除关税；如售到韩国国内其他地区，可在原料关税和产品关税之中选择<br>• 进口物品的保管期限不受限制
+        .item
+          h2 给外国投资企业提供长期租赁用地
+          p • 从国家购买土地后，最长可保持100年租赁
+  
+  .card.card-7.w1000
+    plug(_name="miniTitle" _text="与全球市场的邻近性" _src="./src/moudle/miniTitle.owo")
+    .cut-box.clear
+      img.left.fl(src="@|card-7.jpg|")
+      .right.fl
+        h2 • 新万金位于韩国西海岸中部   全北群山、金堤、扶安一带
+        h2 • 距离中国北京、上海的飞行时间均为2个小时
+        h2 • 与56个国家签署FTA
+        p • 2015年6月  签署韩中FTA<br>• 2015年10月 韩中政府间签署关于“韩中产业协作产业园” 的谅解备忘录<br>• 2017年12月 举办韩中首脑会谈<br>• 2018年以来每年举办次官级、局长级协商会议以及产业交流会
+  .card.card-8.w1000
+    plug(_name="miniTitle" _text="潜在的旅游资源" _src="./src/moudle/miniTitle.owo")
+    plug(_name="cardList" _src="./src/moudle/cardList.owo")
+  
+  .w1000
+    .title
+      h2 项目现况及推进计划
+      h3 Status and plan
+  .card.card-9
 </template>
 
 <script>
@@ -188,5 +240,107 @@
     font-size: 14px;
     line-height: 1.7;
   }
+}
+.card-5 {
+  padding: 50px;
+  width: 1820px;
+  height: 611px;
+  background-image: url('@|bg-2.jpg|');
+  margin: 0 auto;
+  .text-box {
+    width: 1000px;
+    height: 470px;
+    border: 3px solid white;
+    margin: 45px auto;
+    color: white;
+    line-height: 1.7;
+  }
+  .fl {
+    width: 42%;
+    height: 92%;
+    padding: 4%;
+  }
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  h4 {
+    background-color: #839abe;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 2;
+  }
+}
+.card-6 {
+  .box {
+    width: 1063px;
+    height: 456px;
+    margin: 0 auto;
+    background-image: url('@|card-6-bg.png|');
+    .item-box {
+      width: 912px;
+      margin: 0 auto;
+      padding-top: 74px;
+      height: 382px;
+      overflow: hidden;
+      .item {
+        float: left;
+        width: 21%;
+        height: 90%;
+        padding: 2%;
+        color: white;
+        line-height: 1.6;
+      }
+      h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+      p {
+        font-size: 13px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+.card-7 {
+  .cut-box {
+    .left {
+      width: 540px;
+      height: 375px;
+    }
+    .right {
+      width: 430px;
+      margin-left: 30px;
+      height: 375px;
+      overflow: hidden;
+      h2 {
+        color: #104ba4;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 2;
+        padding-left: 1em;
+      }
+    }
+  }
+}
+.card-9 {
+  width: 1920px;
+  height: 535px;
+  margin: 0 auto;
+  background-image: url('@|card-9-bg.png|')
 }
 </style>
