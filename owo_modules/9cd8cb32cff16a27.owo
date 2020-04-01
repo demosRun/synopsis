@@ -1,0 +1,154 @@
+<template>
+  <div class="swiper-container-p2" :mouseenter="stop" :mouseleave="start"> 
+    <div class="swiper-wrapper"> 
+      <div class="swiper-slide">
+      <a href="#" target="_blank"><img src="http://www.people.com.cn/NMediaFile/2019/0620/MAIN201906202020493087485176183.jpg" width="1000" height="535" alt="" /></a>
+      <span>中乌“合作—2019”联合反恐演练圆满结束</span>
+      </div> 
+      <div class="swiper-slide">
+      <a href="#" target="_blank"><img src="http://www.people.com.cn/NMediaFile/2019/0620/MAIN201906202025094971392065777.jpg" width="1000" height="535" alt="" /></a>
+      <span>远方的母亲，请接受来自军人的祝福</span>
+      </div> 
+      <div class="swiper-slide">
+      <a href="#" target="_blank"><img src="http://www.people.com.cn/NMediaFile/2019/0619/MAIN201906191838270226271022901.jpg" width="1000" height="535" alt="" /></a>
+      <span>纪念百年五四——新时代青年新面貌</span>
+      </div> 
+    </div>
+    <div class="prev" o-tap="prev"></div> 
+    <div class="next" o-tap="next"></div>
+    <div class="info-box">
+      <i><em class="thisp">1</em>/<em class="allp"></em></i>
+      <span><span>
+    </div>
+  </div> 
+</template>
+
+<script>
+  module.exports = {
+    data: {
+      swiper: null
+    },
+    created: function () {
+      // 初始化
+      const activeText = this.query('.swiper-slide span') ? this.query('.swiper-slide span').innerHTML : ''
+      console.log(activeText)
+      this.query('.info-box span').innerHTML = activeText      
+      this.$el.getElementsByClassName('allp')[0].innerText = this.$el.getElementsByClassName('swiper-slide').length
+      setTimeout(() => {
+        this.data.swiper = new Swiper(this.$el, {
+          mode: 'horizontal',
+          autoplay: 5000,
+          autoplayDisableOnInteraction: false,
+          loop: true,
+          slidesPerView: 1,
+          mousewheelControl: false,
+          onSlideChangeStart: (swiper) => {
+            const activeItem = swiper.activeSlide()
+            const activeText = activeItem.getElementsByTagName('span')[0] ? activeItem.getElementsByTagName('span')[0].innerHTML : ''
+            const activeIndex = (swiper.activeLoopIndex != undefined ? swiper.activeLoopIndex : swiper.realIndex) + 1
+            this.$el.getElementsByClassName('thisp')[0].innerText = activeIndex
+            this.query('.info-box span').innerHTML = activeText
+          }
+        })
+      }, 0)
+    },
+    stop: function () {
+      this.data.swiper.stopAutoplay()
+    },
+    start: function () {
+      this.data.swiper.startAutoplay()
+    },
+    prev: function () {
+      this.data.swiper.swipePrev ? this.data.swiper.swipePrev(): this.data.swiper.slidePrev()
+    },
+    next: function () {
+      this.data.swiper.swipeNext ? this.data.swiper.swipeNext() : this.data.swiper.slideNext()
+    }
+  }
+</script>
+
+<style lang="less">
+.swiper-container-p2 {
+  position: relative;
+  width: 1000px;
+  height: 535px;
+  margin: 0 auto;
+  overflow: hidden;
+  color: white;
+}
+
+.swiper-slide {
+  width: 1000px;
+  height: 535px;
+  position: relative;
+  a {
+    display: block;
+  }
+}
+
+.swiper-slide span {
+  display: none;
+}
+
+.prev {
+  background: url(http://www.people.com.cn/img/2016people/images/focus_left_b.png);
+  width: 18px;
+  height: 25px;
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  top: 0;
+  left: 10px;
+  z-index: 10;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.next {
+  background: url(http://www.people.com.cn/img/2016people/images/focus_right_b.png);
+  width: 18px;
+  height: 25px;
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  top: 0;
+  right: 10px;
+  z-index: 10;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.swiper-pagination1 {
+  display: none;
+}
+
+.info-box {
+  position: absolute;
+  bottom: -10px;
+  background-color: #073a93;
+  width: 600px;
+  height: 65px;
+  left: 30px;
+  right: 0;
+  margin: auto;
+  font-size: 20px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  i {
+    position: absolute;
+    left: 0;
+    background-color: #81bdff;
+    padding: 5px 15px;
+    left: -30px;
+  }
+}
+
+</style>

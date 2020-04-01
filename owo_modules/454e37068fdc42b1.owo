@@ -1,10 +1,17 @@
 <template>
   <div class="nav clearfix">
-    <a href="#zhanpinkun">新万金简介</a>
-    <a href="#tbch">新万金概况</a>
-    <a href="#spjj">邻近性及优秀FTA环境</a>
-    <a href="#wdtpgs">项目现况及推进计划</a>
-    <a href="#fprj">招商引资优惠政策</a>
+    <a href="#jianjie">新万金简介</a>
+    <a href="#gaikuang">新万金概况</a>
+    <span href="#spjj">邻近性及优秀FTA环境</span>
+    <span class="menu-box">
+      <a href="#huanj1">邻近性及优秀FTA环境</a>
+      <a href="#huanj2">邻近性及优秀FTA环境</a>
+      <a href="#huanj3">邻近性及优秀FTA环境</a>
+      <a href="#huanj4">邻近性及优秀FTA环境</a>
+    </span>
+    
+    <a href="#tjjh">项目现况及推进计划</a>
+    <a href="#yhzc">招商引资优惠政策</a>
   </div>
 </template>
 
@@ -71,11 +78,30 @@ a:hover {
   right: 0;
 }
 
-.nav a {
+
+.nav a, .nav span {
   padding: 0 10px;
   padding-left: 23px;
   margin: 0 5px;
   border-left: 2px solid white;
 }
-
+.nav a:first-child {
+  border-left: none;
+}
+.menu-box {
+  position: absolute;
+  background-color: #003c9f;
+  left: 308px;
+  top: 50px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 255px;
+  height: 0;
+  transition: height 0.4s;
+  overflow: hidden;
+  a {
+    border-left: none;
+  }
+}
 </style>

@@ -10,23 +10,32 @@ body, html {
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
 }
-html {
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-}
+
 body, html, .page {
   padding: 0;
   margin: 0;
   position: relative;
-  height: 100%;
+  overflow: hidden;
 }
 .home {
   background-image: url('@|bg.png|');
   background-repeat: no-repeat;
   background-size: 1920px auto;
   background-position: center 40px;
+}
+html {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
 h1, h2, h3, h4, h5, input {
   margin: 0;
@@ -71,4 +80,8 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 
 .fl {
   float: left;
+}
+
+.nav:hover .menu-box {
+  height: 200px;
 }

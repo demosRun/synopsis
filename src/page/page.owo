@@ -5,6 +5,7 @@
   plug(_name="navbar" _src="https://template.owo.ink/454e37068fdc42b1.owo")
   //- 占位
   .empty
+  
   //- 带装饰的标题
   .w1000
     h2.title-bar 一个开启新文明的城市——新万金
@@ -17,12 +18,14 @@
         .line
         h3 大标题大标题大标题大标题大标
         plug(_name="newsList" _src="./src/moudle/newsList.owo")
+    a(name="jianjie")
     .title
       h2 新万金简介
       h3 Synopsis
     .card.card-2
       plug(_name="infoShow" _src="./src/moudle/infoShow.owo")
     
+    a(name="gaikuang")
     .title
       h2 新万金概况
       h3 General situation
@@ -52,17 +55,20 @@
       //- 底部介绍信息
       .bottom-text 总面积：409km2  (用地：291km2 ，湖沼：118km2 )
   plug.w1000(_name="miniTitle" _text="发展历程" _src="./src/moudle/miniTitle.owo")
-  .card.card-4.time-line
-    .text.text-1991(style="top: 105px; left: 488px;") 防波堤开工
-    .text.text-2010(style="top: 256px; left: 685px;") 防波堤竣工
-    .text.text-2012(style="top: 75px; left: 883px;") 制定新万金特别法
-    .text.text-2013(style="top: 285px; left: 1052px;") 成立新万金开发厅
-    .text.text-2018(style="top: 105px; left: 1235px;") 成立新万金开发公社<br>新万金可再生能源展望宣布仪式
+  .w1000.time-line
+    .card.card-4
+      .text.text-1991(style="top: 105px; left: 488px;") 防波堤开工
+      .text.text-2010(style="top: 256px; left: 685px;") 防波堤竣工
+      .text.text-2012(style="top: 75px; left: 883px;") 制定新万金特别法
+      .text.text-2013(style="top: 285px; left: 1052px;") 成立新万金开发厅
+      .text.text-2018(style="top: 105px; left: 1235px;") 成立新万金开发公社<br>新万金可再生能源展望宣布仪式
   
+  a(name="huanj1")
   .w1000
     .title
       h2 与中国·全球市场的邻近性及优秀的FTA环境
       h3 Environmental Science
+  
   .card.card-5
     plug.w1000(_name="miniTitle2" _text="政府主导的国策项目" _src="./src/moudle/miniTitle2.owo")
     .text-box
@@ -75,9 +81,11 @@
         h2 文在寅政府的支持
         h2 反映国政课题: 为推进有速度感的新万金项目
         p ① 为公共部门主导的填海造地，成立新万金开发公社<br>② 提前建成国际机场、新港湾等物流交通网<br>&emsp;- 公共填埋主导项目: 在国际合作用地内，建成智慧水边城市及2023年世界童军大露营用地的填埋<br>&emsp;- 提前建成物流交通网: 主要干线公路是在举办世界童军大露营前开通，以及适时推进扩充港口、机场、铁路 <br>&emsp;- 增加预算: 2016年808亿韩元、2017年1213亿韩元、2018年2233亿韩元、2019年2562亿韩元
+  
+  a(name="huanj2")
   .card.card-6
     plug.w1000(_name="miniTitle" _text="韩   中经济合作领先项目 新万金韩  中FTA产业合作区" _src="./src/moudle/miniTitle.owo")
-    plug.w1000(_name="high1" _src="https://template.owo.ink/9888d9cbc1129fca.owo")
+    plug(_name="44V6SpMv" _src="https://template.owo.ink/ed81e497afe27e6c.owo")
     .box
       .item-box.clear
         .item
@@ -97,6 +105,7 @@
           h2 给外国投资企业提供长期租赁用地
           p • 从国家购买土地后，最长可保持100年租赁
   
+  a(name="huanj3")
   .card.card-7.w1000
     plug(_name="miniTitle" _text="与全球市场的邻近性" _src="./src/moudle/miniTitle.owo")
     .cut-box.clear
@@ -106,21 +115,52 @@
         h2 • 距离中国北京、上海的飞行时间均为2个小时
         h2 • 与56个国家签署FTA
         p • 2015年6月  签署韩中FTA<br>• 2015年10月 韩中政府间签署关于“韩中产业协作产业园” 的谅解备忘录<br>• 2017年12月 举办韩中首脑会谈<br>• 2018年以来每年举办次官级、局长级协商会议以及产业交流会
+  
+  a(name="huanj4")
   .card.card-8.w1000
     plug(_name="miniTitle" _text="潜在的旅游资源" _src="./src/moudle/miniTitle.owo")
     plug(_name="cardList" _src="./src/moudle/cardList.owo")
   
+  a(name="tjjh")
   .w1000
     .title
       h2 项目现况及推进计划
       h3 Status and plan
   .card.card-9
+    
+    plug(_name="44V6SpMv" _src="https://template.owo.ink/9cd8cb32cff16a27.owo")
+
+  a(name="yhzc")
+  .card.card-10
+    .w1000
+      .title
+        h2 招商引资优惠政策
+        h3 Attract investment
+      .exp-text 优惠奖励制度 :  土地长期租赁、税务减免，现金支持等。
+      img.show-image(src="@|show-image.jpg|")
+      .bottom-card-box.clear
+        .bottom-card.fl
+          h2 土地长期租赁
+          p &emsp;&emsp;土地出让金额的1%(可无偿提供), 租赁100年(50+50)
+        .bottom-card.fl
+          h2 税务<br>减免
+          p &emsp;&emsp;企业所得税全免5年, 关税全免5年, 地方税全免15年。值得一提的是, 企业所得税的全免是因为群山市被指定为雇佣、产业危险地区。新万金产业园被指定为综合保税地区，所以原材料的进出口关税全免。
+        .bottom-card.fl
+          h2 现金<br>支持
+          p &emsp;&emsp;根据企业的规模等因素，地方政府可提供最高200亿韩元的支持
+
+  .card.card-10.w1000
+    plug(_name="miniTitle" _text="新万金高清图画廊" _src="./src/moudle/miniTitle.owo")
+    plug(_name="swiperIt" _text="新万金高清图画廊" _src="./src/moudle/swiperIt.owo")
+  //- 最底部的装饰条
+  img.bottom-bg(src="@|bottom-bg.png|")
+  plug(_name="copyright" _src="https://template.owo.ink/060579f0b4f1bcaa.owo")
 </template>
 
 <script>
   module.exports = {
     created: function () {
-
+      
     }
   }
 </script>
@@ -153,8 +193,8 @@
   font-family: "Microsoft YaHei";
   margin-bottom: 30px;
 }
-.card {
-  margin-bottom: 60px;
+.card, .card.w1000 {
+  margin-bottom: 30px;
   position: relative;
 }
 .card-1 {
@@ -184,7 +224,7 @@
 }
 .title {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: #353535;
   background-image: url('@|title-bg.png|');
   background-repeat: no-repeat;
@@ -226,12 +266,21 @@
   }
 }
 .time-line {
+  position: relative;
+  height: 315px;
+}
+.card-4 {
   height: 315px;
   width: 1917px;
   margin: 0 auto;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url('@|time-line.png|');
+  margin-bottom: 30px;
+  position: absolute;
+  left: -50%;
+  right: -50%;
+  margin: auto;
   .text {
     position: absolute;
     text-align: left;
@@ -242,11 +291,14 @@
   }
 }
 .card-5 {
-  padding: 50px;
-  width: 1820px;
+  padding: 50px 0;
+  width: 100%;
   height: 611px;
   background-image: url('@|bg-2.jpg|');
   margin: 0 auto;
+  background-size: 1920px 711px;
+  background-position: center;
+  margin-bottom: 30px;
   .text-box {
     width: 1000px;
     height: 470px;
@@ -312,7 +364,8 @@
     }
   }
 }
-.card-7 {
+.card-7.w1000 {
+  margin-bottom: 30px;
   .cut-box {
     .left {
       width: 540px;
@@ -338,9 +391,75 @@
   }
 }
 .card-9 {
-  width: 1920px;
+  margin-bottom: 30px;
+  width: 100%;
   height: 535px;
   margin: 0 auto;
-  background-image: url('@|card-9-bg.png|')
+  background-image: url('@|card-9-bg.png|');
+  background-size: 1920px 535px;
+  background-position: center;
+}
+
+.card-10 {
+  margin-bottom: 70px;
+  .title {
+    margin-top: 30px;
+  }
+  .exp-text {
+    text-align: center;
+    font-size: 24px;
+    color: #353535;
+    line-height: 60px;
+  }
+  .show-image {
+    display: block;
+    margin: 0 auto;
+  }
+  .bottom-card {
+    background-image: url('@|bottom-card.png|');
+    width: 326px;
+    height: 249px;
+    position: relative;
+    h2 {
+      color: white;
+      position: absolute;
+      top: 32px;
+      left: 14px;
+      width: 80px;
+      text-align: center;
+    }
+    p {
+      position: absolute;
+      top: 116px;
+      width: 240px;
+      left: 65px;
+      line-height: 1.7;
+      font-size: 13px;
+      height: 109px;
+      overflow: auto;
+    }
+  }
+  .bottom-card-box {
+    position: absolute;
+    bottom: -50px;
+  }
+}
+.bottom-bg {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  pointer-events: none;
+  user-select: none;
+}
+#copyright {
+  color: white;
+  margin-top: 350px;
+  margin-bottom: 50px;
+}
+.mini-title, .mini-title.w1000 {
+  margin-bottom: 30px;
 }
 </style>

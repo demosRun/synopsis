@@ -12,5 +12,6 @@
   color: white;
   background-position: left center;
   padding-left: 30px;
+  margin-bottom: 50px;
 }
 </style>
