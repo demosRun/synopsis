@@ -1,6 +1,6 @@
 <template lang="pug">
 ul.card-list.clear
-  li(:for="9")
+  li(:for="6" o-hover="grow")
     a(href="#")
       img(src="http://www.people.com.cn/NMediaFile/2020/0401/MAIN202004010939439835217830074.jpg")
       p 填写文字

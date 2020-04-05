@@ -31,7 +31,6 @@
     created: function () {
       // 初始化
       const activeText = this.query('.swiper-slide span') ? this.query('.swiper-slide span').innerHTML : ''
-      console.log(activeText)
       this.query('.info-box span').innerHTML = activeText      
       this.$el.getElementsByClassName('allp')[0].innerText = this.$el.getElementsByClassName('swiper-slide').length
       setTimeout(() => {

@@ -85,3 +85,7 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 .nav:hover .menu-box {
   height: 200px;
 }
+
+.card.card-1, .card.card-9, .card.card-2 {
+  margin-bottom: 50px;
+}

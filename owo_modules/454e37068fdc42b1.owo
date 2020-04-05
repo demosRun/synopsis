@@ -67,7 +67,7 @@ a:hover {
   font-size: 20px;
   background: #003c9f;
   position: absolute;
-  top: 600px;
+  top: 557px;
   z-index: 99;
   height: 50px;
   line-height: 50px;

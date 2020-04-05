@@ -8,15 +8,18 @@
   
   //- 带装饰的标题
   .w1000
-    h2.title-bar 一个开启新文明的城市——新万金
+    h2.title-bar
+      a(href="#") 一个开启新文明的城市——新万金
     .card.card-1.clear
       .left.fl
         plug(_name="imageVideoBox" _src="https://template.owo.ink/b0a33b1a2f704f09.owo")
       .right.fl
-        h3 大标题大标题大标题大标题大标
+        h3
+          a(href="#") 大标题大标题大标题大标题大标
         plug(_name="newsList" _src="./src/moudle/newsList.owo")
         .line
-        h3 大标题大标题大标题大标题大标
+        h3
+          a(href="#") 大标题大标题大标题大标题大标
         plug(_name="newsList" _src="./src/moudle/newsList.owo")
     a(name="jianjie")
     .title
@@ -34,7 +37,7 @@
       //- 背景图
       img.so-0(src="@|462.png|")
       //-  文字
-      .text.text-1(style="top: 65px;left: 83px;")
+      .text.text-1(style="top: 65px;left: 118px;")
         h3 产业研究用地
         h4 41.7km2  (14.3%)
       .text.text-2(style="top: 65px;left: 760px;")
@@ -49,7 +52,7 @@
       .text.text-5(style="top: 288px;left: 83px;")
         h3 环境生态用地
         h4 42.0km2  (14.4%)
-      .text.text-6(style="top: 288px;left: 762px;")
+      .text.text-6(style="top: 311px; left: 697px;")
         h3 旅游休闲用地
         h4 36.8km2  (12.6%)
       //- 底部介绍信息
@@ -153,8 +156,9 @@
     plug(_name="miniTitle" _text="新万金高清图画廊" _src="./src/moudle/miniTitle.owo")
     plug(_name="swiperIt" _text="新万金高清图画廊" _src="./src/moudle/swiperIt.owo")
   //- 最底部的装饰条
-  img.bottom-bg(src="@|bottom-bg.png|")
-  plug(_name="copyright" _src="https://template.owo.ink/060579f0b4f1bcaa.owo")
+  .bottom-bg
+    img.logo(src="@|logo.png|")
+    plug(_name="copyright" _src="https://template.owo.ink/060579f0b4f1bcaa.owo")
 </template>
 
 <script>
@@ -192,6 +196,12 @@
   margin: 0 auto;
   font-family: "Microsoft YaHei";
   margin-bottom: 30px;
+  a {
+    color: #073a93;
+  }
+  a:hover {
+    color: #073a93;
+  }
 }
 .card, .card.w1000 {
   margin-bottom: 30px;
@@ -209,8 +219,16 @@
     h3 {
       font-size: 22px;
       line-height: 30px;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
+      margin-top: 5px;
       font-weight: bold;
+      a {
+        color: black;
+      }
+      a:hover {
+        color: #e60012;
+        text-decoration: none;
+      }
     }
     .news-list {
       height: 150px;
@@ -265,9 +283,10 @@
     color: #181616;
   }
 }
-.time-line {
+.time-line.w1000 {
   position: relative;
   height: 315px;
+  margin-bottom: 50px;
 }
 .card-4 {
   height: 315px;
@@ -276,7 +295,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-image: url('@|time-line.png|');
-  margin-bottom: 30px;
   position: absolute;
   left: -50%;
   right: -50%;
@@ -446,17 +464,26 @@
 }
 .bottom-bg {
   display: block;
-  position: absolute;
   bottom: 0px;
   left: 0;
   right: 0;
   margin: auto;
   pointer-events: none;
   user-select: none;
+  height: 399px;
+  background-size: auto 499px;
+  background-position: center;
+  padding-top: 100px;
+  background-image: url('@|bottom-bg.png|');
+  .logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    width: 365px;
+  }
 }
 #copyright {
   color: white;
-  margin-top: 350px;
   margin-bottom: 50px;
 }
 .mini-title, .mini-title.w1000 {

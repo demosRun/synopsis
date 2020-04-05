@@ -27,9 +27,11 @@ ul.news-list
 .news-list {
   overflow: hidden;
   li, a {
-    line-height: 30px;
+    line-height: 39px;
     color: black;
-    font-size: 15px;
+    font-size: 16px;
+    height: 39px;
+    overflow: hidden;
   }
   li:hover, a:hover {
     color: #e60012;
